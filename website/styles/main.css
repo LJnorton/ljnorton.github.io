@@ -1,0 +1,112 @@
+body {
+   display: grid;
+   grid-template-areas: 
+      "header header"
+      "sidebar content"
+      "footer footer";
+   grid-template-columns: 1fr 3fr;
+   grid-gap: 1em;
+  font-size: 10px; 
+  font-family: 'Ubuntu', sans-serif;
+}
+#logo { 
+   height: 5vh; 
+}
+
+header {
+    grid-area: header; 
+}
+
+section { 
+    grid-area: content; 
+}
+
+nav { 
+    grid-area: header;
+}
+
+#navigation-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1vh 1vw;
+    border: 0.1vw solid #8A2BE2;
+    border-radius: 0.5vw;
+    list-style-type: none;
+    background-color: #301934;    
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;   
+  color: #E5E5E5;
+  text-shadow: 3px 3px 1px black;
+}
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  padding: 20px 0;   
+  color: #E5E5E5;
+  text-shadow: 3px 3px 1px black;
+}
+    
+p, li {
+  color: #E5E5E5;
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+label{
+    color: #E5E5E5;
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+img {
+    width: 400px;
+    transform: translateX(60%)  
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #33194C;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+
+footer {
+   grid-area: footer;
+   margin-top: 10vh;
+   border-top: 0.1vw solid #f7b7b7;
+   border: 0.1vw solid #8A2BE2;
+   border-radius: 0.5vw; 
+   background-color: #301934;
+}
+
+.panel {
+   border: 0.1vw solid #e8e6e6;
+   border-radius: 0.5vw;
+   padding: 1vw;
+   margin: 1vh 0;
+}
+
+.clock {
+    position: absolute;
+    transform: translateX(0%) translateY(150%);
+    color: white;
+    font-size: 36px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    border: 0.1vw solid #8A2BE2;
+    border-radius: 0.5vw; 
+    background-color: #301934;
+
+
