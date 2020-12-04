@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Web Dev Website - Javascript</title>
+   <meta charset="utf-8" />
+   <meta name="author" content="Lucas Norton" />
+   <meta name="description" content="Web Dev Website - Javascript" />
+   <link href="styles/main.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" 
+   rel="stylesheet" />
+   <link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" 
+   rel="stylesheet" />
+</head>
+<body>
+<div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+   <nav id="navigation-bar">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="html-info.html">HTML</a></li>
+         <li><a href="xml-info.html">XML</a></li>
+         <li><a href="css-info.html">CSS</a></li>
+         <li><a href="javascript-info.html">Javascript</a></li>
+      </ul>
+   </nav>
+<section> 
+   <h1>All About Javascript</h1>
+    <img src="images/js-logo.png" width =400 alt="My test image">
+    <h2>What is Javascript?</h2>
+    <p>Javascript is a programming language within web design, which allows for use of more complex or advanced features to a web page, such as a live clock or animated graphics on a page.</p>
+    <br>
+    <h2>What can Javascript do?</h2>
+    <p>As earlier mentioned, Javascript can be used for a wide range of dynamic functions on a website. These can often be used to make the page pop a lot more, adding an interactive and dynamic layer to an otherwise static page. </p>
+    <h2>An Example</h2>
+    <p>Below is an example of what Javascript can do; a silly story generator. Give it a go, see what you end up with!</p>
+    <div>
+      <label for="customname">Enter your name:</label>
+      <input id="customname" type="text" placeholder="">
+    </div>
+
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+    <!-- Thanks a lot to Willy Aguirre for his help with the code for this assessment -->
+    <p class="story"></p>
+    </section>
+    <script src="scripts/main.js"></script>
+    <footer>
+      <p>Lucas Norton - ljnorton02@gmail.com</p>
+   </footer>
+  </body>
+</html>
