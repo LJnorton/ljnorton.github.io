@@ -1,0 +1,47 @@
+body {
+   display: grid;
+   grid-template-areas: 
+      "header header"
+      "sidebar content"
+      "footer footer";
+   grid-template-columns: 1fr 3fr;
+   grid-gap: 1em;
+}
+#logo { 
+   height: 5vh; 
+}
+
+header {
+    grid-area: header; 
+}
+
+section { 
+    grid-area: content; 
+}
+
+nav { 
+    grid-area: sidebar;
+}
+
+#nav-labs ul {
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 1vw;
+    border: 0.1vw solid #f7b7b7;
+    border-radius: 0.5vw;
+    list-style-type: none;
+
+}
+
+footer {
+   grid-area: footer;
+   margin-top: 10vh;
+   border-top: 0.1vw solid #f7b7b7;
+}
+
+.panel {
+   border: 0.1vw solid #e8e6e6;
+   border-radius: 0.5vw;
+   padding: 1vw;
+   margin: 1vh 0;
+}
