@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <title>HTTPS Exercises</title>
+   <meta charset="utf-8" />
+   <meta name="author" content="your-name" />
+   <meta name="description" content="HTML5 lab exercises" />
+</head>
+<body>
+   <h1>HTTP and Security</h1>
+   <br>
+   <h2>What is the Hypertext Transfer Protocol (HTTP)?</h2>
+    <p>HTTP is a web protocol used to dictate how data is transmitted and received across the internet.</p>
+   <h2>Why is HTTP called a stateless protocol?</h2>
+    <p>HTTP is called a stateless protocol because each request is done individually, regardless of any of the requests before or after it.</p>
+   <h2>Describe the three phases of establishing a session using client-server protocols such as HTTP</h2>
+    <p>There are three stages - establishing a connection, wherein the port number and domain name of a web page, sending a client request - where the user's client sends a data request to the server, and the server response, wherein the server sends the data requested back to the user's client.</p>
+   <h2>Describe the parameters on a get and post request.</h2>
+    <p>A GET request is a request to recieve data from somewhere, while a POST response is used to send data to a server.</p>
+   <h2>What are the HTTP response status code and What do the HTTP status codes, 200 and 404 indicate?</h2>
+    <p>HTTP status codes are an indication as for whether or not the HTTP request has been sucessful. Code 200 indicates the request was successful, while 404 means the page could not be found.</p>
+   <h2>What are HTTP cookies? Give an example.</h2>
+    <p>Cookies are small pieces of data that a server sends to a client, which may then be stored and sent back to the server on subsequent revisits. An example of a cookie is a temporary session cookie.</p>
+   <h2>Why are cookies a security issue?</h2>
+    <p>Cookies are a security risk because they could be used to store private information such as credit car numbers, so users should be careful to always clear their cookies.</p>
+   <h2>Describe session hijacking and XSS</h2>
+    <p>Session Hijacking is a type of attack where a hacker will take a user's session ID and use it in their own browser, thus tricking the server into thinking it is the same user and granting them access to the session. An XSS attack is an example of that, where a hacker can inject scripts into a web page, so that when someone loads the page, this script is automatically executed and obtains the user's session ID, delivering it to the hacker.</p>
+   <h2>Describe Cross-site request forgery(CSRF)</h2>
+    <p>A CSRF is a type of attack where a hacker manipulates a user into carrying out an action unintentionally, such as changing their account's email or changing the password. This type of attack relies on the fact that a relevant action is being taken on the page, that cookies are active, and that the action taken has values the hacker cannot determine.</p>
+   <h2>What are Cross-Origin HTTP requests (CORS) and what requests use CORS?</h2>
+    <p>Cross-Origin HTTP requests are a type of HTTP request that allows a server to denote other origins from which a browser can pull data or resources from. An example of a cross-origin request is a Javascript function on a website which may display data from another page.</p>
+</body>
+</html>
