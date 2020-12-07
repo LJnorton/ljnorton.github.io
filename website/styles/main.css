@@ -88,6 +88,16 @@ p, li {
   transform: translateY(50%);
 }
 
+#popupText{
+  color: #E5E5E5;
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: underline;
+  transform: translateY(50%);
+}
+
 label{
     color: #E5E5E5;
   font-size: 16px;    
