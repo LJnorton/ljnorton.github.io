@@ -25,6 +25,23 @@ nav {
     grid-area: header;
 }
 
+#sidebar {
+    grid-area: sidebar;
+    color: white;
+    font-size: 36px;
+    font-family: Orbitron;
+    letter-spacing: 7px;
+    border: 0.1vw solid #8A2BE2;
+    border-radius: 0.5vw; 
+    background-color: #301934;
+}
+
+#codeExample {
+  display: grid;
+  align-self: center;
+  transform: translateX(0%) translateY(50%);
+}
+
 #navigation-bar ul {
     display: flex;
     flex-direction: row;
@@ -61,6 +78,16 @@ p, li {
   letter-spacing: 1px;
 }
 
+#sidebarText{
+  color: #E5E5E5;
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: center;
+  text-decoration: underline;
+  transform: translateY(50%);
+}
+
 label{
     color: #E5E5E5;
   font-size: 16px;    
@@ -68,9 +95,9 @@ label{
   letter-spacing: 1px;
 }
 
-img {
-    width: 400px;
-    transform: translateX(60%)  
+#mainImg {
+    width: 390px;
+    transform: translateY(0%) translateX(70%)  
 }
 
 body {
@@ -107,6 +134,86 @@ footer {
     letter-spacing: 7px;
     border: 0.1vw solid #8A2BE2;
     border-radius: 0.5vw; 
-    background-color: #301934;
+    background-color: #301934; 
+}
+
+/* Code for Pop-Up Images */
+    
+#codeExample {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#codeExample:hover {opacity: 0.7;}
 
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: scroll; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+.modal-content {
+  margin: auto;
+  width: 100%;
+  max-width: 1150px;
+  transform: translateY(0%) translateX(50%)
+}
+
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
