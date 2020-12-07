@@ -22,9 +22,19 @@
          <li><a href="javascript-info.html">Javascript</a></li>
       </ul>
    </nav>
+<div id="sidebar">
+    <p id="sidebarText">Below is an example of CSS code</p>
+<img id="codeExample" src="images/cssCode.png" alt="CSS Code Example" style="width:100%;max-width:300px">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img src="blank" class="modal-content" alt = "popupImage" id="img01">
+  <div id="caption"></div>
+</div> 
+<p id="popupText">Click me!</p>
+</div>
 <section> 
    <h1>All About CSS</h1>
-    <img src="images/css-logo.png" width =400 alt="My test image">
+    <img id="mainImg" src="images/css-logo.png" alt="My test image">
     <h2>What is CSS?</h2>
     <p>CSS, or Cascading Style Sheets, is a stylesheet language used for stylising or otherwise flavouring a website to make it look more visually appealing, or to arrange elements on a page.</p>
     <br>
@@ -41,6 +51,27 @@
     <p>The third, and best way to use CSS is with External stylesheets. Here, a separate CSS file is created, then linked with a HTML file. In this CSS file, individual elements can be selected and styled, just like with Internal CSS. However, the benefit to External CSS is that it can be used by multiple HTML files at once. </p>
     </section>
     <script src="scripts/main.js"></script>
+<script>    
+    var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("codeExample");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+    </script>
     <footer>
       <p>Lucas Norton - ljnorton02@gmail.com</p>
    </footer>
