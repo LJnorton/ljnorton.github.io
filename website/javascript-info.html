@@ -22,6 +22,16 @@
          <li><a href="javascript-info.html">Javascript</a></li>
       </ul>
    </nav>
+<div id="sidebar">
+    <p id="sidebarText">Below is an example of Javascript code</p>
+<img id="codeExample" src="images/jsCode.png" alt="Javascript Code Example" style="width:100%;max-width:300px">
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img src="blank" class="modal-content" alt = "popupImage" id="img01">
+  <div id="caption"></div>
+</div> 
+<p id="popupText">Click me!</p>
+</div>
 <section> 
    <h1>All About Javascript</h1>
     <img src="images/js-logo.png" width =400 alt="My test image">
@@ -44,6 +54,27 @@
     <p class="story"></p>
     </section>
     <script src="scripts/main.js"></script>
+<script>    
+    var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("codeExample");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+    </script>
     <footer>
       <p>Lucas Norton - ljnorton02@gmail.com</p>
    </footer>
